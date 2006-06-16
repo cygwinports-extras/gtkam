@@ -1,0 +1,4 @@
+category: Gnome Graphics
+requires: cygwin ORBit2 libbonobo2 libbonoboui2 libexif-gtk5 libgnomeui2 libgphoto2
+sdesc: "GNOME frontend for libgphoto2 with a GIMP plugin"
+ldesc: "GNOME frontend for libgphoto2 with a GIMP plugin"

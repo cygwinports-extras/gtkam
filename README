@@ -1,0 +1,123 @@
+gtkam
+------------------------------------------
+GNOME frontend for libgphoto2, with a GIMP plugin.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  ORBit2-2.14.0-1
+  gimp2-2.2.10-1	(for the GIMP plugin)
+  libbonobo2-2.14.0-1
+  libbonoboui2-2.10.1-1
+  libexif-gtk5-0.3.5-1
+  libgnomeui2-2.12.1-1
+  libgphoto2-2.1.6-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.90-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.5-1
+  intltool-0.34.2-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://gphoto.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/gphoto/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gtkam-0.1.13-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gtkam-0.1.13-X.cygport all
+
+This will create:
+  /usr/src/gtkam-0.1.13-X-src.tar.bz2
+  /usr/src/gtkam-0.1.13-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/gtkam.sh
+  /usr/bin/gtkam.exe
+  /usr/lib/gimp/2.0/plug-ins/gtkam-gimp.exe
+  /usr/share/applications/gtkam.desktop
+  /usr/share/doc/Cygwin/gtkam-0.1.13.README
+  /usr/share/doc/gtkam-0.1.13/ABOUT-NLS
+  /usr/share/doc/gtkam-0.1.13/AUTHORS
+  /usr/share/doc/gtkam-0.1.13/COPYING
+  /usr/share/doc/gtkam-0.1.13/ChangeLog
+  /usr/share/doc/gtkam-0.1.13/INSTALL
+  /usr/share/doc/gtkam-0.1.13/NEWS
+  /usr/share/doc/gtkam-0.1.13/README
+  /usr/share/doc/gtkam-0.1.13/TODO
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_add_camera_enhanced_window.png
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_add_camera_window.png
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_fileinfo.png
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_makedir.png
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_save.png
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_save_all.png
+  /usr/share/gnome/help/gtkam/C/figures/gtkam_start_window.png
+  /usr/share/gnome/help/gtkam/C/legal.xml
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_add_camera_enhanced_window.png
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_add_camera_window.png
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_fileinfo.png
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_makedir.png
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_save.png
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_save_all.png
+  /usr/share/gnome/help/gtkam/ru/figures/gtkam_start_window.png
+  /usr/share/gnome/help/gtkam/ru/legal.xml
+  /usr/share/gtkam/pixmaps/camera.xpm
+  /usr/share/gtkam/pixmaps/configure.xpm
+  /usr/share/gtkam/pixmaps/delete_images.xpm
+  /usr/share/gtkam/pixmaps/exit.xpm
+  /usr/share/gtkam/pixmaps/folder.xpm
+  /usr/share/gtkam/pixmaps/save_current_image.xpm
+  /usr/share/images/gtkam/gtkam-audio.png
+  /usr/share/images/gtkam/gtkam-camera.png
+  /usr/share/images/gtkam/gtkam-folder-camera.png
+  /usr/share/images/gtkam/gtkam-folder.png
+  /usr/share/images/gtkam/gtkam-lock.png
+  /usr/share/images/gtkam/gtkam-new.png
+  /usr/share/locale/cs/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/da/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/de/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/es/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/fr/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/hu/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/it/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/ja/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/nb/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/pl/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/ru/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/sl/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/sv/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/uk/LC_MESSAGES/gtkam.mo
+  /usr/share/man/man1/gtkam.1.gz
+  /usr/share/pixmaps/gtkam.png
+
+------------------
+
+Port Notes:
+
+----- version 0.1.13-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
