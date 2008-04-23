@@ -1,0 +1,12 @@
+inherit gnome2
+
+DESCRIPTION="GNOME frontend for libgphoto2 with a GIMP plugin"
+HOMEPAGE="http://gphoto.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gphoto/${P}.tar.bz2"
+
+DIFF_EXCLUDES='m4m'
+
+PKG_NAMES="${PN} gimp2-${PN}"
+PKG_HINTS="setup gimp"
+PKG_CONTENTS[0]='--exclude=gimp usr/'
+PKG_CONTENTS[1]='usr/lib/gimp/'
