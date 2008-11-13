@@ -3,36 +3,36 @@ gtkam
 GNOME frontend for libgphoto2, with a GIMP plugin.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  ORBit2-2.14.11-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.14.6-1
-  gtk2-x11-2.12.9-1
-  libbonobo2-2.20.4-1
-  libbonoboui2-2.20.0-1
+  cygwin-1.5.25-15
+  ORBit2-2.14.13-1
+  gdk-pixbuf2-2.12.12-1
+  glib2-2.16.6-1
+  gtk2-x11-2.12.12-1
+  libbonobo2-2.22.0-1
+  libbonoboui2-2.22.0-1
   libexif-gtk5-0.3.5-1
   libexif12-0.6.16-2
-  libgnome2-2.20.1.1-1
-  libgnomeui2-2.20.1.1-1
-  libgphoto2-2.4.1-1
-  libintl8-0.15-1
+  libgnome2-2.22.0-1
+  libgnomeui2-2.22.1-1
+  libgphoto2-2.4.3-1
+  libintl8-0.17-2
 (gimp2-gtkam)
-  gimp2-2.4.5-1
+  gimp2-2.4.7-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20060817-1
-  cygport-0.3.9-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  intltool-0.36.3-1
-  libtool-2.2.2-2
+  gnome-common-2.20.0-2
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
-  rarian-0.6.0-1
+  pkg-config-0.23a-2
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical website:
@@ -44,16 +44,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkam-0.1.15-X-src.tar.bz2
+  unpack gtkam-0.1.16-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkam-0.1.15-X.cygport all
+  cygport ./gtkam-0.1.16-X.cygport all
 
 This will create:
-  /usr/src/gtkam-0.1.15-X-src.tar.bz2
-  /usr/src/gtkam-0.1.15-X.tar.bz2
-  /usr/src/gimp2-gtkam-0.1.15-X.tar.bz2
+  /usr/src/gtkam-0.1.16-X-src.tar.bz2
+  /usr/src/gtkam-0.1.16-X.tar.bz2
+  /usr/src/gimp2-gtkam-0.1.16-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,15 +62,15 @@ Files included in the binary packages:
 (gtkam)
   /usr/bin/gtkam.exe
   /usr/share/applications/gtkam.desktop
-  /usr/share/doc/gtkam-0.1.15/ABOUT-NLS
-  /usr/share/doc/gtkam-0.1.15/AUTHORS
-  /usr/share/doc/gtkam-0.1.15/COPYING
-  /usr/share/doc/gtkam-0.1.15/ChangeLog
-  /usr/share/doc/gtkam-0.1.15/Changes
-  /usr/share/doc/gtkam-0.1.15/INSTALL
-  /usr/share/doc/gtkam-0.1.15/NEWS
-  /usr/share/doc/gtkam-0.1.15/README
-  /usr/share/doc/gtkam-0.1.15/TODO
+  /usr/share/doc/gtkam-0.1.16/ABOUT-NLS
+  /usr/share/doc/gtkam-0.1.16/AUTHORS
+  /usr/share/doc/gtkam-0.1.16/COPYING
+  /usr/share/doc/gtkam-0.1.16/ChangeLog
+  /usr/share/doc/gtkam-0.1.16/Changes
+  /usr/share/doc/gtkam-0.1.16/INSTALL
+  /usr/share/doc/gtkam-0.1.16/NEWS
+  /usr/share/doc/gtkam-0.1.16/README
+  /usr/share/doc/gtkam-0.1.16/TODO
   /usr/share/gnome/help/gtkam/C/figures/gtkam_add_camera_enhanced_window.png
   /usr/share/gnome/help/gtkam/C/figures/gtkam_add_camera_window.png
   /usr/share/gnome/help/gtkam/C/figures/gtkam_fileinfo.png
@@ -122,9 +122,11 @@ Files included in the binary packages:
   /usr/share/locale/sv/LC_MESSAGES/gtkam.mo
   /usr/share/locale/uk/LC_MESSAGES/gtkam.mo
   /usr/share/locale/vi/LC_MESSAGES/gtkam.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gtkam.mo
   /usr/share/man/man1/gtkam.1.gz
   /usr/share/omf/gtkam/gtkam-C.omf
   /usr/share/omf/gtkam/gtkam-ru.omf
+  /usr/share/pixmaps/gtkam-camera.png
   /usr/share/pixmaps/gtkam.png
 
 (gimp2-gtkam)
@@ -133,6 +135,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.1.16-1 -----
+Version bump.
 
 ----- version 0.1.15-1 -----
 Version bump for libgphoto-2.4.

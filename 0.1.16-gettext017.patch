@@ -1,0 +1,21 @@
+--- origsrc/gtkam-0.1.16/configure.ac	2008-10-23 02:26:26.000000000 -0500
++++ src/gtkam-0.1.16/configure.ac	2008-11-12 01:51:12.009892500 -0600
+@@ -38,7 +38,6 @@
+ AC_PROG_INSTALL
+ AM_PROG_CC_C_O
+ GP_PKG_CONFIG
+-AC_PROG_INTLTOOL
+ AC_PROG_LIBTOOL
+ AC_SUBST(POMAKEFILEDEPS)
+ 
+@@ -63,9 +62,8 @@
+ dnl ---------------------------------------------------------------------------
+ GP_GETTEXT_HACK([],[Lutz Müller and others],[${MAIL_GPHOTO_TRANSLATION}])
+ ALL_LINGUAS="be cs da de es fr hu it ja nb nl pa pl pt_BR pt ru sk sl sv uk vi zh_CN"
+-AM_GNU_GETTEXT_VERSION([0.14.1])
+-AM_GNU_GETTEXT([external])
+-AM_PO_SUBDIRS()
++AM_GLIB_GNU_GETTEXT
++AC_PROG_INTLTOOL
+ AM_ICONV()
+ GP_GETTEXT_FLAGS()
