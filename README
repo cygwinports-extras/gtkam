@@ -4,18 +4,18 @@ GNOME frontend for libgphoto2, with a GIMP plugin.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  ORBit2-2.14.13-1
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
-  libbonobo2-2.22.0-1
-  libbonoboui2-2.22.0-1
-  libexif-gtk5-0.3.5-1
-  libexif12-0.6.16-2
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
+  libbonobo2_0-2.24.0-1
+  libbonoboui2_0-2.24.0-1
+  libexif-gtk5-0.3.5-2
+  libexif12-0.6.17-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
   libgphoto2-2.4.3-1
+  libgtk2.0_0-2.14.5-1
   libintl8-0.17-2
+  libORBit2_0-2.14.16-1
 (gimp2-gtkam)
   gimp2-2.4.7-1
 
@@ -61,16 +61,38 @@ Files included in the binary packages:
 
 (gtkam)
   /usr/bin/gtkam.exe
+  /usr/lib/locale/be/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/cs/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/da/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/de/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/es/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/fr/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/hu/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/it/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/ja/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/nb/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/nl/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/pa/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/pl/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/pt/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/pt_BR/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/ru/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/sk/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/sl/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/sv/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/uk/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/vi/LC_MESSAGES/gtkam.mo
+  /usr/lib/locale/zh_CN/LC_MESSAGES/gtkam.mo
   /usr/share/applications/gtkam.desktop
-  /usr/share/doc/gtkam-0.1.16/ABOUT-NLS
-  /usr/share/doc/gtkam-0.1.16/AUTHORS
-  /usr/share/doc/gtkam-0.1.16/COPYING
-  /usr/share/doc/gtkam-0.1.16/ChangeLog
-  /usr/share/doc/gtkam-0.1.16/Changes
-  /usr/share/doc/gtkam-0.1.16/INSTALL
-  /usr/share/doc/gtkam-0.1.16/NEWS
-  /usr/share/doc/gtkam-0.1.16/README
-  /usr/share/doc/gtkam-0.1.16/TODO
+  /usr/share/doc/gtkam-0.1.16.1/ABOUT-NLS
+  /usr/share/doc/gtkam-0.1.16.1/AUTHORS
+  /usr/share/doc/gtkam-0.1.16.1/COPYING
+  /usr/share/doc/gtkam-0.1.16.1/ChangeLog
+  /usr/share/doc/gtkam-0.1.16.1/Changes
+  /usr/share/doc/gtkam-0.1.16.1/INSTALL
+  /usr/share/doc/gtkam-0.1.16.1/NEWS
+  /usr/share/doc/gtkam-0.1.16.1/README
+  /usr/share/doc/gtkam-0.1.16.1/TODO
   /usr/share/gnome/help/gtkam/C/figures/gtkam_add_camera_enhanced_window.png
   /usr/share/gnome/help/gtkam/C/figures/gtkam_add_camera_window.png
   /usr/share/gnome/help/gtkam/C/figures/gtkam_fileinfo.png
@@ -101,28 +123,6 @@ Files included in the binary packages:
   /usr/share/images/gtkam/gtkam-folder.png
   /usr/share/images/gtkam/gtkam-lock.png
   /usr/share/images/gtkam/gtkam-new.png
-  /usr/share/locale/be/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/cs/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/da/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/de/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/es/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/fr/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/hu/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/it/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/ja/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/nb/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/nl/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/pa/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/pl/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/pt/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/ru/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/sk/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/sl/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/sv/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/uk/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/vi/LC_MESSAGES/gtkam.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/gtkam.mo
   /usr/share/man/man1/gtkam.1.gz
   /usr/share/omf/gtkam/gtkam-C.omf
   /usr/share/omf/gtkam/gtkam-ru.omf

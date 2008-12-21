@@ -6,8 +6,8 @@ SRC_URI="mirror://sourceforge/gphoto/${P}.tar.bz2"
 PATCH_URI="
 	0.1.15-doc-install.patch
 	0.1.15-no-undefined.patch
-	0.1.16-gettext017.patch
 "
+#	0.1.16-gettext017.patch
 
 DIFF_EXCLUDES='m4m po'
 
