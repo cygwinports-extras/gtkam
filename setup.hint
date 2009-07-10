@@ -1,4 +1,4 @@
 category: Gnome Graphics
-requires: libbonobo2_0 libbonoboui2_0 libexif-gtk5 libexif12 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome2_0 libgnomeui2_0 libgphoto2 libgtk2.0_0 libintl8 libORBit2_0
+requires: libbonobo2_0 libbonoboui2_0 libexif-gtk5 libexif12 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome2_0 libgnomeui2_0 libgphoto2_2 libgphoto2_port0 libgtk2.0_0 libintl8 libORBit2_0
 sdesc: "GNOME frontend for libgphoto2"
 ldesc: "GNOME frontend for libgphoto2 with a GIMP plugin"

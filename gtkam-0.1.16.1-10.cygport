@@ -4,16 +4,15 @@ DESCRIPTION="GNOME frontend for libgphoto2 with a GIMP plugin"
 HOMEPAGE="http://gphoto.sourceforge.net/"
 SRC_URI="mirror://sourceforge/gphoto/${P}.tar.bz2"
 PATCH_URI="
-	0.1.15-doc-install.patch
 	0.1.15-no-undefined.patch
+	0.1.16-gettext017.patch
 "
-#	0.1.16-gettext017.patch
 
 DIFF_EXCLUDES='m4m po'
 
 PKG_NAMES="${PN} gimp2-${PN}"
 PKG_HINTS="setup gimp"
-PKG_CONTENTS[0]='--exclude=gimp usr/'
-PKG_CONTENTS[1]='usr/lib/gimp/'
+gtkam_CONTENTS='--exclude=gimp usr/'
+gimp2_gtkam_CONTENTS='usr/lib/gimp/'
 
 ACLOCAL_FLAGS="-I m4m"
