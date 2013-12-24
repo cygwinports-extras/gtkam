@@ -1,0 +1,25 @@
+inherit gnome2
+
+NAME="gtkam"
+VERSION=0.2.0
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="GNOME frontend for libgphoto2"
+DESCRIPTION="gtkam is the official GTK2 GUI for libgphoto2. Its purpose is to
+provide a standard client for libgphoto2 aimed at GNOME users. Consider it as
+a reference implementation for a graphical libgphoto2 client."
+HOMEPAGE="http://gphoto.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gphoto/${NAME}-${VERSION}.tar.bz2"
+
+PKG_NAMES="${NAME} ${NAME}-common gimp-${NAME}"
+gtkam_REQUIRES="${NAME}-common"
+gtkam_CONTENTS="usr/bin/ usr/share/applications/ usr/share/gnome/ usr/share/man/
+                usr/share/omf/ usr/share/pixmaps/"
+gtkam_common_CONTENTS="usr/share/doc/ usr/share/gtkam/ usr/share/images/ usr/share/locale/"
+gimp_gtkam_SUMMARY="gPhoto2 plugin for the GIMP"
+gimp_gtkam_REQUIRES="${NAME}-common"
+gimp_gtkam_CONTENTS='usr/lib/gimp/'
+
+DIFF_EXCLUDES='m4m po'
+
+ACLOCAL_FLAGS="-I m4m"
